@@ -1,0 +1,171 @@
+{
+  "name": "BDA As-Built",
+  "sites": [
+    {
+      "site_id": "dji_20261001135739_0022_d",
+      "display_name": "Overview: Middle of Site",
+      "lat": 46.85660936111111,
+      "lng": -122.35280338888889
+    },
+    {
+      "site_id": "dji_20261001135620_0021_d",
+      "display_name": "Overview: Bottom of Site",
+      "lat": 46.853264083333336,
+      "lng": -122.35726125
+    },
+    {
+      "site_id": "dji_20261001135430_0020_d",
+      "display_name": "Overview: Top of Site",
+      "lat": 46.86158786111111,
+      "lng": -122.34718547222222
+    },
+    {
+      "site_id": "dji_20261001130907_0023_d",
+      "display_name": "BDA Site #1",
+      "lat": 46.85068172222223,
+      "lng": -122.36044949999999
+    },
+    {
+      "site_id": "dji_20261001131230_0025_d",
+      "display_name": "Heli Jam #1",
+      "lat": 46.851674055555556,
+      "lng": -122.35941874999999
+    },
+    {
+      "site_id": "dji_20261001132002_0003_d",
+      "display_name": "BDA Site #2 / Heli Jam #2",
+      "lat": 46.85236838888889,
+      "lng": -122.35714541666665
+    },
+    {
+      "site_id": "dji_20261001132210_0005_d",
+      "display_name": "BDA Site #3",
+      "lat": 46.852876083333335,
+      "lng": -122.3561846111111
+    },
+    {
+      "site_id": "dji_20261001132357_0006_d",
+      "display_name": "BDA Site #4",
+      "lat": 46.85310716666667,
+      "lng": -122.35601405555555
+    },
+    {
+      "site_id": "dji_20261001132546_0007_d",
+      "display_name": "Heli Jam #3",
+      "lat": 46.854675722222225,
+      "lng": -122.35525602777777
+    },
+    {
+      "site_id": "dji_20261001132715_0008_d",
+      "display_name": "BDA Site #5",
+      "lat": 46.85485911111111,
+      "lng": -122.3545471111111
+    },
+    {
+      "site_id": "dji_20261001132826_0009_d",
+      "display_name": "Heli Jam #4",
+      "lat": 46.85499572222222,
+      "lng": -122.35406183333333
+    },
+    {
+      "site_id": "dji_20261001132936_0010_d",
+      "display_name": "Natural Beaver dam that we're going to take credit for?",
+      "lat": 46.85525494444445,
+      "lng": -122.35357155555555
+    },
+    {
+      "site_id": "dji_20261001133136_0011_d",
+      "display_name": "BDA Site #5.5",
+      "lat": 46.85624722222222,
+      "lng": -122.35262866666666
+    },
+    {
+      "site_id": "dji_20261001133252_0012_d",
+      "display_name": "Heli Jam #5",
+      "lat": 46.856671194444445,
+      "lng": -122.35196038888888
+    },
+    {
+      "site_id": "dji_20261001133540_0013_d",
+      "display_name": "Heli Jam #6",
+      "lat": 46.8570185,
+      "lng": -122.35135816666666
+    },
+    {
+      "site_id": "dji_20261001133647_0014_d",
+      "display_name": "BDA Site #6",
+      "lat": 46.85699891666667,
+      "lng": -122.35064772222222
+    },
+    {
+      "site_id": "dji_20261001133822_0015_d",
+      "display_name": "Heli Jam #7",
+      "lat": 46.85774391666667,
+      "lng": -122.3504895
+    },
+    {
+      "site_id": "dji_20261001134006_0016_d",
+      "display_name": "Heli Jam #8",
+      "lat": 46.85874008333334,
+      "lng": -122.35041105555555
+    },
+    {
+      "site_id": "dji_20261001134544_0001_d",
+      "display_name": "Heli Jam #9",
+      "lat": 46.86101036111111,
+      "lng": -122.3475401111111
+    },
+    {
+      "site_id": "dji_20261001134723_0002_d",
+      "display_name": "Heli Jam #10",
+      "lat": 46.861473861111115,
+      "lng": -122.34753652777778
+    },
+    {
+      "site_id": "dji_20261001134904_0003_d",
+      "display_name": "Heli Jam #11",
+      "lat": 46.862270111111116,
+      "lng": -122.34676380555555
+    },
+    {
+      "site_id": "dji_20261001135114_0004_d",
+      "display_name": "BDA Site #7",
+      "lat": 46.863123305555554,
+      "lng": -122.34642375
+    }
+  ],
+  "basemap_type": "xyz_tile",
+  "basemap_url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+  "overlays": [
+    {
+      "label": "Heli Jam Locations (Prelim Design)",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_c20260210PmtDrawings_HelicopterJams/MapServer/tile/{z}/{y}/{x}",
+      "opacity": 0.8,
+      "default_on": false,
+      "type": "tile"
+    },
+    {
+      "label": "BDA Locations (Prelim Design)",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_c20260210PmtDrawings_BDAlocations/MapServer/tile/{z}/{y}/{x}",
+      "opacity": 0.8,
+      "default_on": false,
+      "type": "tile"
+    },
+    {
+      "label": "Ortho (5/28/2025)",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20250528_clipped_tif/MapServer/tile/{z}/{y}/{x}",
+      "opacity": 1.0,
+      "default_on": false,
+      "type": "tile"
+    },
+    {
+      "label": "Ortho (11/01/2015)",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20151101_EntrixDeliverable/MapServer/tile/{z}/{y}/{x}",
+      "opacity": 1.0,
+      "default_on": true,
+      "type": "tile"
+    }
+  ],
+  "forward_label": "Forward",
+  "backward_label": "Back"
+}

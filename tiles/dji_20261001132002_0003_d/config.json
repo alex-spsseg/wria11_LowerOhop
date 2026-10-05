@@ -1,0 +1,60 @@
+{
+  "mode": "single",
+  "format": "raw",
+  "yaw_1": -0.2559943782250347,
+  "pitch_1": 1.5707963267948966,
+  "yaw_2": 0.0,
+  "pitch_2": 0.0,
+  "lat": 46.85236838888889,
+  "lng": -122.35714541666665,
+  "label_1": "DJI_20261001132002_0003_D (2026/10/01)",
+  "label_2": "",
+  "autorotate": false,
+  "hotspots_1": [
+    {
+      "yaw": 1.907420398644817,
+      "pitch": 0.019457073500039,
+      "title": "Heli Jam #1",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001131230_0025_d",
+      "link_icon": "aerial",
+      "images": []
+    },
+    {
+      "yaw": -1.7182048332551183,
+      "pitch": 0.10669296690120866,
+      "title": "BDA Site #3",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132210_0005_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": -2.730697738715481,
+      "pitch": -0.7809321694376763,
+      "title": "Overview: Bottom of Site",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001135620_0021_d",
+      "link_icon": "overview",
+      "images": []
+    }
+  ],
+  "hotspots_2": [],
+  "levels_1": [],
+  "levels_2": [],
+  "pin_style": "dot",
+  "basemap_type": "xyz_tile",
+  "basemap_url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+  "mobile_1": 5000,
+  "mobile_2": 0,
+  "heading_offset": 136.64799852475682,
+  "overlays": []
+}

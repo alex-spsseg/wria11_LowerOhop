@@ -1,0 +1,35 @@
+{
+  "mode": "single",
+  "format": "raw",
+  "yaw_1": 0.162319327559576,
+  "pitch_1": 1.4000119571586591,
+  "yaw_2": 0.0,
+  "pitch_2": 0.0,
+  "lat": 46.85310716666667,
+  "lng": -122.35601405555555,
+  "label_1": "DJI_20261001132357_0006_D (2026/10/01)",
+  "label_2": "",
+  "autorotate": false,
+  "hotspots_1": [
+    {
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "title": "BDA Site #3",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132210_0005_d"
+    }
+  ],
+  "hotspots_2": [],
+  "levels_1": [],
+  "levels_2": [],
+  "pin_style": "dot",
+  "basemap_type": "xyz_tile",
+  "basemap_url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+  "mobile_1": 5000,
+  "mobile_2": 0,
+  "heading_offset": null,
+  "overlays": []
+}
