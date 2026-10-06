@@ -26,10 +26,22 @@
       "lng": -122.36044949999999
     },
     {
+      "site_id": "img_20261001_145910_00_037",
+      "display_name": "BDA Site #1 (Ground View)",
+      "lat": 46.85067380689147,
+      "lng": -122.36057190611147
+    },
+    {
       "site_id": "dji_20261001131230_0025_d",
       "display_name": "Heli Jam #1",
       "lat": 46.851674055555556,
       "lng": -122.35941874999999
+    },
+    {
+      "site_id": "img_20261001_145327_00_035",
+      "display_name": "Heli Jam #1 (Ground View)",
+      "lat": 46.8516740517547,
+      "lng": -122.35956682625174
     },
     {
       "site_id": "dji_20261001132002_0003_d",
@@ -38,16 +50,40 @@
       "lng": -122.35714541666665
     },
     {
+      "site_id": "img_20261001_144549_00_034",
+      "display_name": "BDA Site #2 (Ground View)",
+      "lat": 46.85235709717392,
+      "lng": -122.35728037416418
+    },
+    {
+      "site_id": "img_20261001_144100_00_033",
+      "display_name": "Heli Jam #2 (Ground View)",
+      "lat": 46.85248199515678,
+      "lng": -122.35697880685089
+    },
+    {
       "site_id": "dji_20261001132210_0005_d",
       "display_name": "BDA Site #3",
       "lat": 46.852876083333335,
       "lng": -122.3561846111111
     },
     {
+      "site_id": "img_20261001_143553_00_032",
+      "display_name": "BDA Site #3 (Ground View)",
+      "lat": 46.85291514421746,
+      "lng": -122.35619040835707
+    },
+    {
       "site_id": "dji_20261001132357_0006_d",
       "display_name": "BDA Site #4",
       "lat": 46.85310716666667,
       "lng": -122.35601405555555
+    },
+    {
+      "site_id": "img_20261001_143050_00_031",
+      "display_name": "BDA Site #4 (Ground View)",
+      "lat": 46.853123205569915,
+      "lng": -122.35603650238164
     },
     {
       "site_id": "dji_20261001132546_0007_d",
@@ -62,6 +98,12 @@
       "lng": -122.3545471111111
     },
     {
+      "site_id": "img_20261001_142113_00_030",
+      "display_name": "BDA Site #5 (Ground View)",
+      "lat": 46.85488183123142,
+      "lng": -122.35456884326057
+    },
+    {
       "site_id": "dji_20261001132826_0009_d",
       "display_name": "Heli Jam #4",
       "lat": 46.85499572222222,
@@ -69,15 +111,21 @@
     },
     {
       "site_id": "dji_20261001132936_0010_d",
-      "display_name": "Natural Beaver dam that we're going to take credit for?",
+      "display_name": "Natural Beaver Dam",
       "lat": 46.85525494444445,
       "lng": -122.35357155555555
     },
     {
       "site_id": "dji_20261001133136_0011_d",
-      "display_name": "BDA Site #5.5",
+      "display_name": "BDA Site #6",
       "lat": 46.85624722222222,
       "lng": -122.35262866666666
+    },
+    {
+      "site_id": "img_20261001_141146_00_029",
+      "display_name": "BDA Site #6 (Ground View)",
+      "lat": 46.856323514789956,
+      "lng": -122.3526320047692
     },
     {
       "site_id": "dji_20261001133252_0012_d",
@@ -93,7 +141,7 @@
     },
     {
       "site_id": "dji_20261001133647_0014_d",
-      "display_name": "BDA Site #6",
+      "display_name": "BDA Site #7",
       "lat": 46.85699891666667,
       "lng": -122.35064772222222
     },
@@ -108,6 +156,12 @@
       "display_name": "Heli Jam #8",
       "lat": 46.85874008333334,
       "lng": -122.35041105555555
+    },
+    {
+      "site_id": "img_20261001_121126_00_028",
+      "display_name": "Heli Jam #8 (Ground View)",
+      "lat": 46.85873147272154,
+      "lng": -122.35046601311386
     },
     {
       "site_id": "dji_20261001134544_0001_d",
@@ -129,75 +183,21 @@
     },
     {
       "site_id": "dji_20261001135114_0004_d",
-      "display_name": "BDA Site #7",
+      "display_name": "BDA Site #8",
       "lat": 46.863123305555554,
       "lng": -122.34642375
     },
     {
-      "site_id": "img_20261001_120510_00_027",
-      "display_name": "IMG_20261001_120510_00_027 (2026/10/01)",
-      "lat": 46.860343665928625,
-      "lng": -122.34973296624585
-    },
-    {
-      "site_id": "img_20261001_121126_00_028",
-      "display_name": "IMG_20261001_121126_00_028 (2026/10/01)",
-      "lat": 46.85873147272154,
-      "lng": -122.35046601311386
-    },
-    {
-      "site_id": "img_20261001_141146_00_029",
-      "display_name": "IMG_20261001_141146_00_029 (2026/10/01)",
-      "lat": 46.856323514789956,
-      "lng": -122.3526320047692
-    },
-    {
-      "site_id": "img_20261001_142113_00_030",
-      "display_name": "IMG_20261001_142113_00_030 (2026/10/01)",
-      "lat": 46.85488183123142,
-      "lng": -122.35456884326057
-    },
-    {
-      "site_id": "img_20261001_143050_00_031",
-      "display_name": "IMG_20261001_143050_00_031 (2026/10/01)",
-      "lat": 46.853123205569915,
-      "lng": -122.35603650238164
-    },
-    {
-      "site_id": "img_20261001_143553_00_032",
-      "display_name": "IMG_20261001_143553_00_032 (2026/10/01)",
-      "lat": 46.85291514421746,
-      "lng": -122.35619040835707
-    },
-    {
-      "site_id": "img_20261001_144100_00_033",
-      "display_name": "IMG_20261001_144100_00_033 (2026/10/01)",
-      "lat": 46.85248199515678,
-      "lng": -122.35697880685089
-    },
-    {
-      "site_id": "img_20261001_144549_00_034",
-      "display_name": "IMG_20261001_144549_00_034 (2026/10/01)",
-      "lat": 46.85235709717392,
-      "lng": -122.35728037416418
-    },
-    {
-      "site_id": "img_20261001_145327_00_035",
-      "display_name": "IMG_20261001_145327_00_035 (2026/10/01)",
-      "lat": 46.8516740517547,
-      "lng": -122.35956682625174
-    },
-    {
       "site_id": "img_20261001_145737_00_036",
-      "display_name": "IMG_20261001_145737_00_036 (2026/10/01)",
+      "display_name": "Old Log Structures",
       "lat": 46.851079789272035,
       "lng": -122.36055155315411
     },
     {
-      "site_id": "img_20261001_145910_00_037",
-      "display_name": "IMG_20261001_145910_00_037 (2026/10/01)",
-      "lat": 46.85067380689147,
-      "lng": -122.36057190611147
+      "site_id": "img_20261001_120510_00_027",
+      "display_name": "Old Staging Area",
+      "lat": 46.860343665928625,
+      "lng": -122.34973296624585
     }
   ],
   "basemap_type": "xyz_tile",
@@ -218,6 +218,13 @@
       "type": "tile"
     },
     {
+      "label": "Ortho (10/01/2026, ~7cfs)",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20261001_7cfs_ortho/MapServer/tile/{z}/{y}/{x}",
+      "opacity": 1.0,
+      "default_on": true,
+      "type": "tile"
+    },
+    {
       "label": "Ortho (5/28/2025)",
       "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20250528_clipped_tif/MapServer/tile/{z}/{y}/{x}",
       "opacity": 1.0,
@@ -225,7 +232,7 @@
       "type": "tile"
     },
     {
-      "label": "Ortho (11/01/2015)",
+      "label": "Ortho (~9/2015)",
       "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20151101_EntrixDeliverable/MapServer/tile/{z}/{y}/{x}",
       "opacity": 1.0,
       "default_on": true,
