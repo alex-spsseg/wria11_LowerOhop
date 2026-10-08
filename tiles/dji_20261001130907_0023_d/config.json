@@ -44,5 +44,6 @@
   "mobile_1": 5000,
   "mobile_2": 0,
   "heading_offset": 211.41442661435985,
-  "overlays": []
+  "overlays": [],
+  "platform": "aerial"
 }
