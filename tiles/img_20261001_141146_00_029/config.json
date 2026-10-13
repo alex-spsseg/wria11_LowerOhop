@@ -1,8 +1,8 @@
 {
   "mode": "single",
   "format": "raw",
-  "yaw_1": 0.0,
-  "pitch_1": 0.0,
+  "yaw_1": 0.3454404120027963,
+  "pitch_1": 0.41566530102263327,
   "yaw_2": 0.0,
   "pitch_2": 0.0,
   "lat": 46.856323514789956,
@@ -19,7 +19,7 @@
   "basemap_url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
   "mobile_1": 5000,
   "mobile_2": 0,
-  "heading_offset": null,
+  "heading_offset": 154.3233455333194,
   "overlays": [
     {
       "label": "Heli Jam Locations (Prelim Design)",
@@ -49,5 +49,6 @@
       "default_on": true,
       "type": "tile"
     }
-  ]
+  ],
+  "heading_confirmed": true
 }

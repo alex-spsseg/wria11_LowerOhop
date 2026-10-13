@@ -19,7 +19,7 @@
   "basemap_url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
   "mobile_1": 5000,
   "mobile_2": 0,
-  "heading_offset": null,
+  "heading_offset": 126.9230337917864,
   "overlays": [
     {
       "label": "Heli Jam Locations (Prelim Design)",
@@ -49,5 +49,6 @@
       "default_on": true,
       "type": "tile"
     }
-  ]
+  ],
+  "heading_confirmed": true
 }
