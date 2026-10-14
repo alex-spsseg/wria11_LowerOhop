@@ -44,16 +44,6 @@
       "pin_style": "label_hover",
       "target": "dji_20261001135620_0021_d",
       "link_icon": "overview"
-    },
-    {
-      "yaw": 3.141592653589793,
-      "pitch": 0,
-      "title": "Overview: Bottom of Site",
-      "text": "",
-      "link": "",
-      "category": "link",
-      "pin_style": "label_hover",
-      "target": "dji_20261001135620_0021_d"
     }
   ],
   "hotspots_2": [],

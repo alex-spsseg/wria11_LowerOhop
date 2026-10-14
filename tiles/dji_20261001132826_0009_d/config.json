@@ -10,7 +10,52 @@
   "label_1": "DJI_20261001132826_0009_D (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": -2.192290544044617,
+      "pitch": 0.060714879725439985,
+      "title": "Heli Jam #3",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132546_0007_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": -2.2132458083214814,
+      "pitch": 0.3398012144791629,
+      "title": "BDA Site #5",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132715_0008_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": 0.1722537225287475,
+      "pitch": -0.2624070893173389,
+      "title": "Overview: Middle of Site",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001135739_0022_d",
+      "link_icon": "overview"
+    },
+    {
+      "yaw": 0.6893714885126698,
+      "pitch": 0.1969640848191041,
+      "title": "Natural Beaver Dam",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132936_0010_d",
+      "link_icon": "aerial"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],
