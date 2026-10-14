@@ -12,14 +12,38 @@
   "autorotate": false,
   "hotspots_1": [
     {
-      "yaw": 3.141592653589793,
-      "pitch": 0,
+      "yaw": 2.3077445481460046,
+      "pitch": -0.2998363953350882,
       "title": "Overview: Top of Site",
       "text": "",
       "link": "",
       "category": "link",
       "pin_style": "label_hover",
-      "target": "dji_20261001135430_0020_d"
+      "target": "dji_20261001135430_0020_d",
+      "link_icon": "overview",
+      "images": []
+    },
+    {
+      "yaw": -1.2759617480754972,
+      "pitch": -0.010435222078157835,
+      "title": "Heli Jam #7",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001133822_0015_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": -0.5539596393240274,
+      "pitch": -0.20466699889341555,
+      "title": "Overview: Middle of Site",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001135739_0022_d",
+      "link_icon": "overview"
     }
   ],
   "hotspots_2": [],
