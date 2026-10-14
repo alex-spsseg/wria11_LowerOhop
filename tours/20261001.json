@@ -248,7 +248,7 @@
     },
     {
       "label": "Ortho (5/28/2025)",
-      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20250528_clipped_tif/MapServer/tile/{z}/{y}/{x}",
+      "url": "https://tiles.arcgis.com/tiles/buuvDFFARQiOEbVZ/arcgis/rest/services/LowerOhop_20250528_14cfs_ortho/MapServer/tile/{z}/{y}/{x}",
       "opacity": 1.0,
       "default_on": false,
       "type": "tile"
