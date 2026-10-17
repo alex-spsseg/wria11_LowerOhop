@@ -57,5 +57,8 @@
   "mobile_2": 0,
   "heading_offset": 136.64799852475682,
   "overlays": [],
-  "platform": "aerial"
+  "platform": "aerial",
+  "alt_checked": true,
+  "alt": 151.93,
+  "rel_alt": 30.87
 }

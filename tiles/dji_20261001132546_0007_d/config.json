@@ -78,5 +78,8 @@
   "heading_offset": 26.39179029431591,
   "overlays": [],
   "platform": "aerial",
-  "heading_confirmed": true
+  "heading_confirmed": true,
+  "alt_checked": true,
+  "alt": 146.92,
+  "rel_alt": 25.85
 }
