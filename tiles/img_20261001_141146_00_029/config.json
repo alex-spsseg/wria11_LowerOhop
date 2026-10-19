@@ -10,7 +10,31 @@
   "label_1": "IMG_20261001_141146_00_029 (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": 3.2006376890888286,
+      "pitch": -1.3225699483558213,
+      "title": "Overview: Middle of Site",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001135739_0022_d",
+      "link_icon": "overview",
+      "images": []
+    },
+    {
+      "yaw": 0.41823075903979134,
+      "pitch": -1.2690652033805867,
+      "title": "BDA Site #6",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001133136_0011_d",
+      "link_icon": "aerial"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],

@@ -10,7 +10,19 @@
   "label_1": "IMG_20261001_145327_00_035 (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": 6.081415263381605,
+      "pitch": -1.2335500002563784,
+      "title": "Heli Jam #1",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001131230_0025_d",
+      "link_icon": "aerial"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],

@@ -104,5 +104,6 @@
   "heading_confirmed": true,
   "alt_checked": true,
   "alt": 255.01,
-  "rel_alt": 136.81
+  "rel_alt": 136.81,
+  "overview": true
 }

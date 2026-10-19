@@ -10,7 +10,41 @@
   "label_1": "IMG_20261001_143553_00_032 (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": 0.9028758657282581,
+      "pitch": -1.394261614569573,
+      "title": "BDA Site #3",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132210_0005_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": 4.706419777538728,
+      "pitch": -0.7105348892942841,
+      "title": "BDA Site #4",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132357_0006_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": 4.613951439345435,
+      "pitch": -0.04350720538360245,
+      "title": "BDA Site #4",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_143050_00_031",
+      "link_icon": "ground"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],

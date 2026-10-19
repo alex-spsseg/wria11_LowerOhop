@@ -54,6 +54,17 @@
       "pin_style": "label_hover",
       "target": "dji_20261001132936_0010_d",
       "link_icon": "aerial"
+    },
+    {
+      "yaw": -2.15337739702008,
+      "pitch": 0.5336731346842658,
+      "title": "BDA Site #5",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_142113_00_030",
+      "link_icon": "ground"
     }
   ],
   "hotspots_2": [],

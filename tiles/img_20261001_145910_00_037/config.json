@@ -10,7 +10,19 @@
   "label_1": "IMG_20261001_145910_00_037 (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": 5.6053318946805994,
+      "pitch": -1.2472007732688029,
+      "title": "BDA Site #1",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001130907_0023_d",
+      "link_icon": "aerial"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],

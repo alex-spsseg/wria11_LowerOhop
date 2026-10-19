@@ -7,6 +7,7 @@
       "lat": 46.85660936111111,
       "lng": -122.35280338888889,
       "platform": "aerial",
+      "overview": true,
       "alt": 254.87,
       "rel_alt": 136.66
     },
@@ -16,6 +17,7 @@
       "lat": 46.86158786111111,
       "lng": -122.34718547222222,
       "platform": "aerial",
+      "overview": true,
       "alt": 255.01,
       "rel_alt": 136.81
     },
@@ -25,6 +27,7 @@
       "lat": 46.853264083333336,
       "lng": -122.35726125,
       "platform": "aerial",
+      "overview": true,
       "alt": 254.89,
       "rel_alt": 136.69
     },

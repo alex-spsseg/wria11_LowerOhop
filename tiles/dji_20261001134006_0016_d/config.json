@@ -44,6 +44,17 @@
       "pin_style": "label_hover",
       "target": "dji_20261001135739_0022_d",
       "link_icon": "overview"
+    },
+    {
+      "yaw": -0.24907127335221446,
+      "pitch": 1.2783126529325255,
+      "title": "Heli Jam #8",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_121126_00_028",
+      "link_icon": "ground"
     }
   ],
   "hotspots_2": [],

@@ -10,7 +10,30 @@
   "label_1": "IMG_20261001_144100_00_033 (2026/10/01)",
   "label_2": "",
   "autorotate": false,
-  "hotspots_1": [],
+  "hotspots_1": [
+    {
+      "yaw": 2.75101738184557,
+      "pitch": -1.0681315434739966,
+      "title": "BDA Site #2 / Heli Jam #2",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "dji_20261001132002_0003_d",
+      "link_icon": "aerial"
+    },
+    {
+      "yaw": 2.990412419167482,
+      "pitch": 0.01043179699095641,
+      "title": "BDA Site #2",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_144549_00_034",
+      "link_icon": "ground"
+    }
+  ],
   "hotspots_2": [],
   "levels_1": [],
   "levels_2": [],

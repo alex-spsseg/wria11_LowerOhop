@@ -33,6 +33,28 @@
       "target": "dji_20261001131230_0025_d",
       "link_icon": "aerial",
       "images": []
+    },
+    {
+      "yaw": 0.9282399082830415,
+      "pitch": 1.2472008173046272,
+      "title": "BDA Site #1",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_145910_00_037",
+      "link_icon": "ground"
+    },
+    {
+      "yaw": 2.4197398374378607,
+      "pitch": 0.5367622889485993,
+      "title": "Old Log Structures",
+      "text": "",
+      "link": "",
+      "category": "link",
+      "pin_style": "label_hover",
+      "target": "img_20261001_145737_00_036",
+      "link_icon": "ground"
     }
   ],
   "hotspots_2": [],
