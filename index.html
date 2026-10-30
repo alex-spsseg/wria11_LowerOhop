@@ -604,6 +604,9 @@
     .edit-group > summary:hover { color: #ffffff; }
     .edit-group-body { display: flex; flex-direction: column; gap: 6px; padding-top: 6px; }
     #heading-group #heading-dial-row { margin-top: 0; padding-top: 0; border-top: none; }
+    #position-coords { color: #d9b3ff; font-size: 12px; margin-bottom: 4px; word-break: break-all; }
+    #pos-help { display: none; color: #d8c8f0; font-size: 11px; line-height: 1.4; margin-bottom: 4px; }
+    .tour-stop-link.pos-unsaved::after { content: ' \25CF'; color: #7fd6ff; margin-left: 6px; }
     #heading-dial-label { color: #d9b3ff; font-size: 12px; margin-bottom: 6px; }
     #heading-value-display { font-weight: bold; color: #fff; }
     #heading-dial-nudges { display: flex; gap: 4px; margin-bottom: 6px; }
@@ -1040,7 +1043,7 @@
 </head>
 <body>
 
-  <div id="build-timestamp">Built 2026-10-29 14:09:31</div>
+  <div id="build-timestamp">Built 2026-10-29 17:25:51</div>
 
   <div id="status-banner"></div>
 
@@ -1196,6 +1199,17 @@
       <button id="save-hotspots-btn" class="edit-tool-btn" type="button" style="display:none;">Save Hotspots</button>
       <button id="hotspot-list-btn" class="edit-tool-btn" type="button" style="display:none;">Show Hotspot List</button>
       <div id="hotspot-list-content" style="display:none;"></div>
+      </div>
+      </details>
+      <details class="edit-group" id="position-group" style="display:none;"><summary>Position</summary>
+      <div class="edit-group-body">
+      <div id="position-row" style="display:none;">
+        <div id="position-coords">No position for this stop.</div>
+        <button id="pos-move-btn" class="edit-tool-btn" type="button">Move This Pin</button>
+        <div id="pos-help">Drag this stop's pin on the map, or click the map to put it there. Zoom in for fine placement. Pins turn the stop's sidebar entry blue until saved.</div>
+        <button id="pos-save-btn" class="edit-tool-btn" type="button" style="display:none;">Save Position</button>
+        <button id="pos-revert-btn" class="edit-tool-btn" type="button" style="display:none;">Revert This Stop</button>
+      </div>
       </div>
       </details>
       <details class="edit-group" id="heading-group" style="display:none;"><summary>Heading</summary>
@@ -1524,7 +1538,7 @@
     (function () {
       var panel = document.getElementById('edit-tools-panel');
       function syncEditGroups() {
-        ['hotspots-group', 'heading-group'].forEach(function (id) {
+        ['hotspots-group', 'position-group', 'heading-group'].forEach(function (id) {
           var g = document.getElementById(id);
           var body = g && g.querySelector('.edit-group-body');
           if (!body) return;
@@ -3984,6 +3998,7 @@
         if (changed && !firstStop && autoZoomStops) zoomMapToStop(activeMarker.getLatLng());
         else if (!(bookmarkHitSet && firstStop)) siteMap.panTo(mapCenterFor(activeMarker.getLatLng())); // a bookmark's framing wins on first load
       }
+      if (window.__posSync) window.__posSync();
     }
 
     // -- zoom the map to each stop as it is selected -----------------------
@@ -4878,6 +4893,7 @@
       // to be told to re-measure once it's actually visible, or tiles
       // render into a collapsed 0x0 area.
       setTimeout(() => { if (siteMap) siteMap.invalidateSize(); }, 60);
+      if (window.__posAfterRender) window.__posAfterRender();
       updateViewCone();
     }
 
@@ -5247,6 +5263,137 @@
         else if (k === ']') nudgeKey(1);
         else if (k === '{') nudgeKey(-5);
         else if (k === '}') nudgeKey(5);
+      });
+    })();
+    // ---- Position: drag a stop's pin on the map to where its photo was really taken (local preview only) ----
+    (function () {
+      var moveBtn = document.getElementById('pos-move-btn');
+      var saveBtn = document.getElementById('pos-save-btn');
+      var revertBtn = document.getElementById('pos-revert-btn');
+      var coordsEl = document.getElementById('position-coords');
+      var helpEl = document.getElementById('pos-help');
+      var moving = false;
+      var pending = {};   // site id -> {lat, lng}: moved, not saved yet
+      var original = {};  // site id -> [lat, lng]: where it was before the first move, or at the last save
+      var mapClickWired = false;
+
+      function marker(sid) { return sid ? tourMarkersBySite[sid] : null; }
+      function sidebarEl(sid) { return document.querySelector('.tour-stop-link[data-site-id="' + sid + '"]'); }
+      function remember(sid) {
+        var m = marker(sid);
+        if (m && !original[sid]) { var c = m.getLatLng(); original[sid] = [c.lat, c.lng]; }
+      }
+      function refreshUi() {
+        var sid = activeTourSiteId, m = marker(sid);
+        if (!m) coordsEl.textContent = 'This stop has no position. Place it with Place Stops on Map in the publisher.';
+        else {
+          var ll = m.getLatLng();
+          coordsEl.textContent = ll.lat.toFixed(6) + ', ' + ll.lng.toFixed(6) + (pending[sid] ? '  (moved, not saved)' : '');
+        }
+        var n = Object.keys(pending).length;
+        saveBtn.textContent = n > 1 ? 'Save Positions (' + n + ' stops)' : 'Save Position';
+        saveBtn.style.display = n ? 'inline-block' : 'none';
+        revertBtn.style.display = (sid && pending[sid]) ? 'inline-block' : 'none';
+        moveBtn.textContent = moving ? 'Done Moving' : 'Move This Pin';
+        moveBtn.style.display = m ? 'inline-block' : 'none';
+        helpEl.style.display = moving ? 'block' : 'none';
+      }
+      function noteMove(sid) {
+        var m = marker(sid), o = original[sid];
+        if (!m || !o) return;
+        var ll = m.getLatLng();
+        if (Math.abs(ll.lat - o[0]) < 1e-9 && Math.abs(ll.lng - o[1]) < 1e-9) delete pending[sid];
+        else pending[sid] = { lat: ll.lat, lng: ll.lng };
+        var el = sidebarEl(sid);
+        if (el) el.classList.toggle('pos-unsaved', !!pending[sid]);
+        updateViewCone();
+        refreshUi();
+      }
+      function setDraggable(sid, on) {
+        var m = marker(sid);
+        if (!m) return;
+        if (on) remember(sid);
+        m.options.draggable = on;
+        if (m.dragging) { if (on) m.dragging.enable(); else m.dragging.disable(); }
+        if (on && !m.__posWired) {
+          m.__posWired = true;
+          m.on('drag', function () { noteMove(sid); });
+          m.on('dragend', function () { noteMove(sid); });
+        }
+      }
+      function wireMapClick() {
+        if (mapClickWired || !siteMap) return;
+        mapClickWired = true;
+        siteMap.on('click', function (e) {
+          if (!moving || (typeof measureActive !== 'undefined' && measureActive)) return;
+          var sid = activeTourSiteId, m = marker(sid);
+          if (!m) return;
+          remember(sid);
+          m.setLatLng(e.latlng);
+          noteMove(sid);
+        });
+      }
+      function sync() {
+        wireMapClick();
+        Object.keys(tourMarkersBySite).forEach(function (sid) {
+          var want = moving && sid === activeTourSiteId;
+          var m = marker(sid);
+          if (m && !!m.options.draggable !== want) setDraggable(sid, want);
+        });
+        refreshUi();
+      }
+      window.__posSync = sync;
+      window.__posAfterRender = function () {
+        // The map was rebuilt from the saved positions, so put back any pins moved but not saved yet.
+        Object.keys(pending).forEach(function (sid) {
+          var m = marker(sid);
+          if (m) { remember(sid); m.setLatLng([pending[sid].lat, pending[sid].lng]); }
+        });
+        sync();
+      };
+      moveBtn.addEventListener('click', function () {
+        if (!marker(activeTourSiteId)) { refreshUi(); return; }
+        if (!moving) {
+          if (siteMapPanel.style.display === 'none' || !siteMapPanel.style.display) openSiteMap();
+          moving = true;
+        } else {
+          moving = false;
+        }
+        setTimeout(sync, 0);
+      });
+      revertBtn.addEventListener('click', function () {
+        var sid = activeTourSiteId, m = marker(sid), o = original[sid];
+        if (!m || !o) return;
+        m.setLatLng(o);
+        noteMove(sid);
+      });
+      saveBtn.addEventListener('click', function () {
+        var ids = Object.keys(pending);
+        if (!ids.length) return;
+        var label = saveBtn.textContent;
+        fetch('/__save_position', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ positions: ids.map(function (sid) { return { site_id: sid, lat: pending[sid].lat, lng: pending[sid].lng }; }) }),
+        }).then(function (res) {
+          if (res.ok) {
+            ids.forEach(function (sid) {
+              var p = pending[sid];
+              original[sid] = [p.lat, p.lng];
+              [pendingMapData && pendingMapData.sites, tourSiteOptions].forEach(function (list) {
+                (list || []).forEach(function (s) { if (s && s.site_id === sid) { s.lat = p.lat; s.lng = p.lng; } });
+              });
+              delete pending[sid];
+              var el = sidebarEl(sid);
+              if (el) el.classList.remove('pos-unsaved');
+            });
+            refreshUi();
+          }
+          saveBtn.textContent = res.ok ? 'Saved!' : 'Failed, try again';
+          setTimeout(refreshUi, 1400);
+        }).catch(function () {
+          saveBtn.textContent = 'Preview server not reachable';
+          setTimeout(function () { saveBtn.textContent = label; }, 1800);
+        });
       });
     })();
     var editHotspotsBtn = document.getElementById('edit-hotspots-btn');
@@ -5768,6 +5915,7 @@
         placeHotspotBtn.style.display = 'inline-block';
         saveHotspotsBtn.style.display = 'inline-block';
         hotspotListBtn.style.display = 'inline-block';
+        document.getElementById('position-row').style.display = 'block';
         document.getElementById('heading-dial-row').style.display = 'block';
         document.getElementById('crosshair-toggle-btn').style.display = 'inline-block';
 

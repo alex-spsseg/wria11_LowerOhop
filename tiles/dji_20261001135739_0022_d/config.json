@@ -37,7 +37,7 @@
     {
       "yaw": 0.2364351722365985,
       "pitch": 0.43060991145768135,
-      "title": "Heli Jam #7",
+      "title": "Heli Jam #7 \u00b7 216 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -49,18 +49,19 @@
     {
       "yaw": 0.5843025252905711,
       "pitch": 0.707784317943835,
-      "title": "Heli Jam #7",
+      "title": "Heli Jam #6",
       "text": "",
       "link": "",
       "category": "link",
       "pin_style": "label_hover",
       "target": "dji_20261001133822_0015_d",
-      "link_icon": "aerial"
+      "link_icon": "aerial",
+      "images": []
     },
     {
       "yaw": 0.9029148591536025,
       "pitch": 1.0117156696737997,
-      "title": "Heli Jam #5",
+      "title": "Heli Jam #5 \u00b7 64 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -71,7 +72,7 @@
     {
       "yaw": 0.6555084359294945,
       "pitch": 0.5557971249481923,
-      "title": "BDA Site #7",
+      "title": "BDA Site #7 \u00b7 170 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -83,7 +84,7 @@
     {
       "yaw": 2.0574039031553424,
       "pitch": 1.1114020804337787,
-      "title": "BDA Site #6",
+      "title": "BDA Site #6 \u00b7 42 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -94,7 +95,7 @@
     {
       "yaw": 2.7516013413627203,
       "pitch": 0.6185071370531521,
-      "title": "Natural Beaver Dam",
+      "title": "Natural Beaver Dam \u00b7 162 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -105,7 +106,7 @@
     {
       "yaw": 2.8598067130337226,
       "pitch": 0.5078670739896172,
-      "title": "Heli Jam #4",
+      "title": "Heli Jam #4 \u00b7 203 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -116,7 +117,7 @@
     {
       "yaw": 2.976743893812692,
       "pitch": 0.4448308453349341,
-      "title": "BDA Site #5",
+      "title": "BDA Site #5 \u00b7 235 m",
       "text": "",
       "link": "",
       "category": "link",
@@ -127,7 +128,7 @@
     {
       "yaw": 3.086302260263345,
       "pitch": 0.3628014748834065,
-      "title": "Heli Jam #3",
+      "title": "Heli Jam #3 \u00b7 285 m",
       "text": "",
       "link": "",
       "category": "link",
